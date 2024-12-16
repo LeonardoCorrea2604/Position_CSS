@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Box model</title>
+</head>
+<body>
+    <header>
+        <div class="header-image-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/6000/6000250.png" alt="logo-image">
+        </div>
+        <form>
+            <input type="text" placeholder="Busca a tu artista favorito">
+            <button>Buscar</button>
+        </form>
+        <ul>
+            <li>Home</li>
+            <li>Artistas</li>
+            <li>Ayuda</li>
+        </ul>
+    </header>
+    <div class="genders-container">
+        <div class="gender-card">
+            <div class="info-gender-card">
+                <h1>Mis artistas fav</h1>
+                <div class="icon-gender-container">
+                    <img src="data:image/png;base64,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" alt="gender-icon">
+                </div>
+            <div class="image-gender-container">
+                <img src="data:image/png;base64,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" alt="gender-image">
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="cards-container">
+        <div class="card">
+            <div class="card-image-container">
+                <img src="https://i.scdn.co/image/ab67616d0000b273e3d809b9270c1b26728d4e53" alt="Album">
+            </div>
+            <div class="card-info">
+                <h1>Noches de Salón</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dignissimos quaerat vero veniam dolore quidem numquam, quas quo placeat voluptatum et illum illo delectus? Quaerat sint sapiente natus excepturi reiciendis!</p>
+            </div>
+            <button>Mostrar más</button>
+        </div>
+        <div class="card">
+            <div class="card-image-container">
+                <img src="https://i.scdn.co/image/ab67616d0000b2732a038d3bf875d23e4aeaa84e" alt="Album">
+            </div>
+            <div class="card-info">
+                <h1>Happier Than Ever</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ad ratione sapiente dolorem, similique porro ab, corporis exercitationem eveniet ea eos cupiditate totam fugiat animi incidunt minima nulla beatae odit?</p>
+            </div>
+            <button>Mostrar más</button>
+        </div>
+        <div class="card">
+            <div class="card-image-container">
+                <img src="https://i.scdn.co/image/ab67616d0000b27371d62ea7ea8a5be92d3c1f62" alt="Album">
+            </div>
+            <div class="card-info">
+                <h1>Hit Me Hard and Soft</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloribus, recusandae quisquam unde deserunt eos. Totam facilis veritatis maiores aperiam impedit quia tenetur necessitatibus, rerum unde modi cupiditate provident saepe?</p>
+            </div>
+            <button>Mostrar más</button>
+        </div>
+        <div class="card">
+            <div class="card-image-container">
+                <img src="https://i.scdn.co/image/ab67616d0000b273e032619b8e7ac02b3739fc66" alt="Album">
+            </div>
+            <div class="card-info">
+                <h1>Dead Club City</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae corrupti eius doloremque soluta, fuga recusandae voluptate in consequuntur excepturi explicabo, dolores architecto? Saepe dolor odit corporis. Ipsam debitis minus quidem.</p>
+            </div>
+            <button>Mostrar más</button>
+        </div>
+        <div class="card">
+            <div class="card-image-container">
+                <img src="https://i.scdn.co/image/ab67616d0000b273a9f6c04ba168640b48aa5795" alt="Album">
+            </div>
+            <div class="card-info">
+                <h1>idontwannabeyouanymore</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, veritatis molestiae? Odit voluptate consectetur dignissimos ratione minus saepe maiores obcaecati mollitia repudiandae, fugit vel similique aut totam eaque accusamus. Esse.</p>
+            </div>
+            <button>Mostrar más</button>
+        </div>
+        <div class="card">
+            <div class="card-image-container">
+                <img src="https://i.scdn.co/image/ab67616d0000b27313e38f3da42937aba61956f0" alt="Album">
+            </div>
+            <div class="card-info">
+                <h1>The Gods We Can Touch</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem obcaecati ab non explicabo culpa totam aspernatur illo. Dignissimos, nam odit corporis optio veniam modi deserunt eligendi accusantium inventore, itaque nostrum?</p>
+            </div>
+            <button>Mostrar más</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-logo-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/6000/6000250.png" alt="logo-image">
+        </div>
+        <ul class="links-container">
+            <li>Ayuda</li>
+            <li>Terminos y condiciones</li>
+            <li>Sobre nosotros</li>
+            <li>Aviso de privacidad</li>
+        </ul>
+        <ul class="logos-container">
+            <a href="#"><li><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github-logo"></li></a>
+            <a href="#"><li><img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="linkedin-logo"></li></a>
+        </ul>
+    </footer>
+</body>
+</html>
